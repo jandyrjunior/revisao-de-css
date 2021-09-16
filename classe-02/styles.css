@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #E9EEF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans';
+    min-height: 100vh;
+}
+
+.main-card {
+    background-color: white;
+    min-height: auto;
+    min-width: auto;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-left: 595px;
+    margin-right: 595px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    margin-top: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px 7.5px 0px 7.5px;
+}
+
+.card-1, 
+.card-3 {
+    background-color: #f8f2fa;
+}
+
+.card-2 {
+    background-color: #faf2f4;
+}
+
+.fundo-img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 35px 174px 0px 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin: 6px 181px 0px 181px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 51px 0px 51px;
+}
+
+button {
+    background-color: #0C1727;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin: 35px 101px 50px 101px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}

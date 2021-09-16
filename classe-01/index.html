@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Feedback</title>
+</head>
+
+<body>
+  <div class="card-1">
+    <div class="container-fechar">
+      <img src="assets/botao-fechar.svg" alt="icone-fechar-janela">
+    </div>
+    <h4>
+      How satisfied are you with our
+      <br>
+      customer support performance?
+    </h4>
+    <div class="container-emoji">
+      <button onclick="mudarDisplay()">
+        <img src="assets/emoji-triste.svg" alt="emoji-triste">
+        <p>Unhappy</p>
+      </button>
+      <button onclick="mudarDisplay()">
+        <img src="assets/emoji-neutro.svg" alt="emoji-neutro">
+        <p>Neutral</p>
+      </button>
+      <button onclick="mudarDisplay()">
+        <img src="assets/emoji-feliz.svg" alt="emoji-feliz">
+        <p>Satisfied</p>
+      </button>
+    </div>
+    <button class="botao-fechar">Close</button>
+  </div>
+  <div class="card-2">
+    <div class="container-fechar">
+      <img src="assets/botao-fechar.svg" alt="icone-fechar-janela" onclick="mudarDisplay()">
+    </div>
+    <img class='coracao' src="assets/coracao.svg" alt="icone-coracao">
+    <h4>Thank you!</h4>
+    <p class="texto-agradecimento">
+      We’ll use your feedback to
+      <br>
+      improve our customer support
+      <br>
+      performance.
+    </p>
+    <form action="submit">
+      <input class="comentario" type="text" name="comentario" id="comentario" placeholder="Write a comment">
+      <input class="botao-comentario" type="button" value="Done" onclick="mudarDisplay()">
+    </form>
+  </div>
+</body>
+
+<script>
+  const card1 = document.querySelector('.card-1');
+  const card2 = document.querySelector('.card-2');
+
+  function mudarDisplay() {
+    card1.style.display = card1.style.display === 'none' ? 'flex' : 'none';
+    card2.style.display = card2.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+</html>
